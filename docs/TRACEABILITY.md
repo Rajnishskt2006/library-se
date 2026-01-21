@@ -5,4 +5,7 @@
 | Sprint-2 | Borrow Book | borrow_book() | test_borrow_book_success | v0.2 |
 | Sprint-2 | Borrow Error | borrow_book() | test_borrow_already_borrowed_book_raises_error | v0.2 |
 | Sprint-2 | Return Book | return_book() | test_return_book | v0.2 |
+| Sprint-3 | Generate Report | generate_report() | test_generate_report_contains_header | v0.3 |
+| Sprint-3 | Report Entry | generate_report() | test_generate_report_contains_book_entry | v0.3 |
+
 

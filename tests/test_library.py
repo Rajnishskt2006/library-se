@@ -36,3 +36,12 @@ if __name__ == "__main__":
         self.library.return_book("B004")
         self.assertEqual(self.library.books["B004"]["status"], "Available")
 
+    def test_generate_report_contains_header(self):
+        report = self.library.generate_report()
+        self.assertIn("Book ID | Title | Author | Status", report[0])
+
+    def test_generate_report_contains_book_entry(self):
+        self.library.add_book("B005", "AI", "Russell")
+        report = self.library.generate_report()
+        self.assertTrue(any("B005" in line for line in report))
+
